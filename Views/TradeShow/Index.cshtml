@@ -1,0 +1,41 @@
+﻿@model IEnumerable<LeadManagement.Models.TradeShows>
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1>Tradeshows</h1>
+
+    <!-- OUR FORM -->
+    <form action="http://sampatdarshan-prod.apigee.net/ILS/v1/LeadManagement?apikey=d2ZUIIdKE893NHt5dsRHe9zKeUSNdN3a" method="POST">
+
+        <!-- ID -->
+        <!-- TradeShowName -->
+        <div id="name-group" class="form-group">
+            <label for="TradeShowName">Trade Show Name</label>
+            <input type="text" class="form-control" name="TradeShowName" id="TradeShowName">
+            <!-- errors will go here -->
+        </div>
+
+
+        <!-- Lead Name -->
+        <div id="superhero-group" class="form-group">
+            <label for="LeadName">Lead Name</label>
+            <input type="text" class="form-control" name="LeadName" id="LeadName">
+            <!-- errors will go here -->
+        </div>
+
+        <!-- Lead Name -->
+        <div id="superhero-group" class="form-group">
+            <label for="LeadName">Email Address</label>
+            <input type="text" class="form-control" name="EmailAddress" id="EmailAddress">
+            <!-- errors will go here -->
+        </div>
+        <!-- Lead Name -->
+        <div id="superhero-group" class="form-group">
+            <label for="LeadName">Telephone</label>
+            <input type="text" class="form-control" name="Telephone" id="Telephone">
+            <!-- errors will go here -->
+        </div>
+        <button type="submit" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+
+    </form>
+
+</div>
